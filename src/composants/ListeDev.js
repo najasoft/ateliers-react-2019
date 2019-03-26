@@ -12,10 +12,10 @@ class ListeDev extends Component {
       }
     
     supprimer(id) {
-      let liste2=this.state.liste.filter((el)=> el.objectID!=id)
+      let liste2=this.state.liste.filter((el)=> el.objectID!==id)
       this.setState({"liste":liste2});
     }
-     
+        
 
     render(){
         return <div className="container">
